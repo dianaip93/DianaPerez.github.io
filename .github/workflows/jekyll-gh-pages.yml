@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./react-site/
+        working-directory: /react-site/
 
     steps:
       - uses: actions/checkout@v4
