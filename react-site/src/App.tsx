@@ -4,7 +4,6 @@ import {
   Card,
   CardBody,
   CardFooter,
-  CardHeader,
   Flex,
   Heading,
   IconButton,
@@ -128,6 +127,7 @@ const App = () => {
                       superTitle={superTitle}
                       title={title}
                       buttonText={buttonText}
+                      // @ts-expect-error shrug
                       onClick={() => setOpenProject(key as ProjectNames)}
                       imageSrc={imageSrc}
                       body={body}
