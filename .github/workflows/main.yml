@@ -18,3 +18,11 @@ jobs:
           node-version: '20.x'
       - run: npm ci
       - run: npm run build
+
+      - name: GitHub Pages Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with: 
+          BRANCH: gh-pages
+          FOLDER: dist
+          TARGET_FOLDER: .
+          CLEAN: true
