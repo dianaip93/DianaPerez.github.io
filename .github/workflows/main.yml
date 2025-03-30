@@ -28,4 +28,5 @@ jobs:
       - name: GitHub Pages Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with: 
+          BRANCH: gh-pages
           FOLDER: ./react-site/build
