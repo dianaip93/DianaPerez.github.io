@@ -60,7 +60,7 @@ The process began with data cleaning in SQL to ensure accuracy and consistency, 
     superTitle: "Destination Trends",
     title: "Where, How, and Who",
     buttonText: "View Project",
-    imageSrc: "https://public.tableau.com/static/images/5D/5D7GBNPC9/1_rss.png",
+    imageSrc: "./TravelerTripsDashboard.jpg",
     body: `This project analyzes a traveler trips dataset, transforming raw data into actionable insights for a travel agency. The process began with data cleaning in SQL to ensure accuracy and consistency, followed by exploratory analysis to uncover trends in traveler demographics, preferred destinations, and seasonal patterns. Key business questions were addressed, such as identifying the right target market for each destination, selecting optimal accommodations, and planning trips during peak seasons. A dynamic Tableau dashboard was then developed, allowing users to compare cities, filter by demographics, and dive deeper into travel behaviors. While the dataset’s size poses challenges for query performance, these analyses can be regularly updated as new data is collected, helping the agency adapt to evolving travel trends and make data-driven decisions.`,
     sections: [
       {
