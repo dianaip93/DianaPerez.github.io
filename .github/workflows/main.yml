@@ -2,6 +2,9 @@ name: Build React
 
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
   build:
 
@@ -16,5 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-      - run: npm ci
-      - run: npm run build
+
+      - name: Install and build
+        run: |
+          npm ci
+          npm run build
+
+      - name: GitHub Pages Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with: 
+          BRANCH: gh-pages
+          FOLDER: ./react-site/dist
